@@ -8,7 +8,6 @@ restaurant = [
     [6,        'o',      'o',      'o',      'o',      'x',      'o']
 ]
 
-
 #Level 1
 print ("Let's find you a table.")
 #Quick message to begin the program
@@ -38,7 +37,7 @@ for occupied in restaurant[int(choice1)][int(float(int(column)))] in restaurant:
 party_size1 = input ("How many people are you bringing?")
 
 for occupied in column in restaurant[int(choice1)][int(float(int(column)))]:
-    if party_size1 >= occupied in column:
+    if party_size1 <= occupied in column:
         print (column)
 
 #----------------------------------------------------------------------------------------
@@ -47,15 +46,14 @@ for occupied in column in restaurant[int(choice1)][int(float(int(column)))]:
 party_size2 = input ("How many people are you bringing?")
 
 for occupied in all: column in restaurant
-if party_size2 >= occupied in all: column
+if party_size2 <= occupied in all: column
 print (all, column)
 
 #----------------------------------------------------------------------------------------
 
 #Level 4
 
-#Plan:
-#Take input, make a for loop with restarant[row][input] in restaraunt
+#Plan: #Take input, make a for loop with restarant[row][input] in restaraunt
 #For all occupied in restaurant (list), if occupied is in [row]
 #if number of occupied in multiple columns >= input
 #print all columns
