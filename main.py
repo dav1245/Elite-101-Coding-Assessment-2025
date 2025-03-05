@@ -54,3 +54,8 @@ print (all, column)
 
 #Level 4
 
+#Plan:
+#Take input, make a for loop with restarant[row][input] in restaraunt
+#For all occupied in restaurant (list), if occupied is in [row]
+#if number of occupied in multiple columns >= input
+#print all columns
